@@ -73,14 +73,18 @@ end
 # Outputs who won
 def winner(board)
   won = won?(board) != false
-  number_of_x = board.select {|position| position == 'X'}
-  number_of_o = board.select {|position| position == 'O'}
+  all_X = board.select {|position| position == 'X'}
+  all_O = board.select {|position| position == 'O'}
+
+  number_of_X = all_X.length
+  number_of_O = all_O.length
+
 
   if (won)
-    if number_of_x.length > number_of_o.length
+    if (number_of_X > number_of_O)
       return 'X'
 
-    elsif number_of_x.length < number_of_o.length
+    elsif (number_of_X < number_of_O)
       return 'O'
     end
 
