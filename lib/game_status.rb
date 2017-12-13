@@ -73,7 +73,6 @@ end
 # Outputs who won
 def winner(board)
   won = won?(board) != false
-
   number_of_x = board.select {|position| position == 'X'}
   number_of_o = board.select {|position| position == 'O'}
 
