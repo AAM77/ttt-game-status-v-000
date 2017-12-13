@@ -72,7 +72,7 @@ def winner(board)
   if (won?(board) != false)
     if number_of_x > number_of_o
       return 'X'
-    else number_of_x < number_of_o
+    elsif number_of_x < number_of_o
       return 'O'
     end
 
