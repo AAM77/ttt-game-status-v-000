@@ -27,10 +27,14 @@ def won?(board)
     win_combination.all? do |win_index|
       position = board[win_index]
 
-    if position = 'X' || position == 'O'
-      return win_combination
-    else
-      return false
+      if position = 'X' || position == 'O'
+        return win_combination
+      else
+        return false
+      end
+    end
+  end
+end
 
       #win_array << win_index_1
       #win_array << win_index_2
