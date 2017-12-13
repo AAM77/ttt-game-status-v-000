@@ -41,10 +41,6 @@ end
       #win_array << win_index_3
 
       #return win_array
-    end
-  end
-end
-
 
 #checks if the board is full
 def full?(board)
