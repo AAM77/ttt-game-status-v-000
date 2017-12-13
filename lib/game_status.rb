@@ -24,8 +24,11 @@ def won?(board)
 
   win_array = []
   WIN_COMBINATIONS.any? do |win_combination|
-    win_combination.all? {|win_index| board[win_index] == 'X'} ||
+    if win_combination.all? {|win_index| board[win_index] == 'X'} ||
     win_combination.all? {|win_index| board[win_index] == 'O'}
+    return win_combination
+  else
+    return false
   end
 end
 
