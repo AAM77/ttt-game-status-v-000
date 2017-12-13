@@ -27,7 +27,7 @@ def won?(board)
     win_combination.all? do |win_index|
       position = board[win_index]
 
-    if (position_1 == 'X' && position_2 == 'X' && position_3 == 'X') || (position_1 == 'O' && position_2 == 'O' && position_3 == 'O')
+    if position = 'X' || position == 'O'
       return win_combination
     else
       return false
