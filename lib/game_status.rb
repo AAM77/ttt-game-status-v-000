@@ -55,9 +55,9 @@ end
 
 # Checks if the games has ended
 def over?(board)
-  if won?(board) != false
+  if won?(board) == true
     return true
-  elsif won?(board) != false && full?(board) == true
+  elsif won?(board) == true && full?(board) == true
     return true
   elsif draw?(board) == true
     return true
@@ -69,7 +69,7 @@ def winner(board)
   number_of_x = board.select {|position| position == 'X'}
   number_of_o = board.select {|position| position == 'O'}
 
-  if (won?(board) != false)
+  if (won?(board) == true)
     if number_of_x.length > number_of_o.length
       return 'X'
 
