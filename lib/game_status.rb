@@ -16,9 +16,6 @@ WIN_COMBINATIONS = [
   [2, 4, 6] # diagonal top-left to bottom right
 ]
 
-#board_empty = board.all? {|position| position == nil || position == "" || position == " "}
-#board_full = board.all? {|position| position == 'X' || position == 'O'}
-
 # Checks if someone has won the game
 def won?(board)
 
@@ -29,12 +26,6 @@ def won?(board)
     end
   end
 end
-
-      #win_array << win_index_1
-      #win_array << win_index_2
-      #win_array << win_index_3
-
-      #return win_array
 
 #checks if the board is full
 def full?(board)
