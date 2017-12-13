@@ -81,11 +81,11 @@ def winner(board)
   number_of_O = all_O.length
 
 
-  if (won)
-    if (number_of_X > number_of_O)
+  if ( won )
+    if ( number_of_X > number_of_O )
       return 'X'
 
-    elsif (number_of_X < number_of_O)
+    elsif ( number_of_X < number_of_O )
       return 'O'
     end
 
