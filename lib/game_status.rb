@@ -55,9 +55,9 @@ end
 
 # Checks if the games has ended
 def over?(board)
-  if won?(board) == true
+  if won?(board) != false
     return true
-  elsif won?(board) == true && full?(board) == true
+  elsif won?(board) != false && full?(board) == true
     return true
   elsif draw?(board) == true
     return true
