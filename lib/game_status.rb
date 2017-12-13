@@ -65,7 +65,7 @@ def over?(board)
   elsif (won && full)
     return true
 
-  elsif (draw))
+  elsif (draw)
     return true
   end
 end
