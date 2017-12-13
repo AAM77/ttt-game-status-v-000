@@ -60,13 +60,13 @@ def over?(board)
   won = won?(board) != false
   draw = draw?(board) == true
 
-  if (won)
+  if ( won )
     return true
 
-  elsif (won && full)
+  elsif ( won && full )
     return true
 
-  elsif (draw)
+  elsif ( draw )
     return true
   end
 end
