@@ -73,7 +73,7 @@ def winner(board)
     if number_of_x.length > number_of_o.length
       return 'X'
 
-    elsif number_of_x < number_of_o
+    elsif number_of_x.length < number_of_o
       return 'O'
     end
 
