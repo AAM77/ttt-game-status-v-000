@@ -60,10 +60,10 @@ def over?(board)
 
   if won
     return true
-    
+
   elsif won && full
     return true
-    
+
   elsif draw?(board) == true
     return true
   end
@@ -71,10 +71,12 @@ end
 
 # Outputs who won
 def winner(board)
+  won = won?(board) != false
+
   number_of_x = board.select {|position| position == 'X'}
   number_of_o = board.select {|position| position == 'O'}
 
-  if (won?(board) != false)
+  if (won)
     if number_of_x.length > number_of_o.length
       return 'X'
 
