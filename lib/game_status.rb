@@ -25,8 +25,6 @@ def won?(board)
   win_array = []
   WIN_COMBINATIONS.each do |win_combination|
     win_combination.all? {|win_index| board[win_index] == 'X'}
-      else
-        return false
       end
     end
   end
