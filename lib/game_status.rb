@@ -39,10 +39,6 @@ def won?(board)
       win_array << win_index_3
 
       return win_array
-
-    else
-      win_array = []
-      return "What the fuck happened?!!!"
     end
   end
 end
