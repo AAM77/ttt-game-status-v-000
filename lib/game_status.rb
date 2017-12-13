@@ -40,7 +40,7 @@ def won?(board)
       #win_array << win_index_2
       #win_array << win_index_3
 
-      return win_array
+      #return win_array
     end
   end
 end
