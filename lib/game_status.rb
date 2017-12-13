@@ -39,16 +39,16 @@ end
 
 # checks if the game is a draw
 def draw?(board)
-  full = full?(board) == true
-  won = won?(board) == true
+  #full = full?(board) == true
+  #won = won?(board) == true
 
-  if !won && full
+  if won?(board) == false && full?(board) == true
     return true
 
-  elsif !won && !full
+  elsif won?(board) == false && full?(board) == false
     return false
 
-  elsif won
+  elsif won?(board) == true
     return false
   end
 end
