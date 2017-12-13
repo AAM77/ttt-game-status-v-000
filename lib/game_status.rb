@@ -4,7 +4,6 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
-
 WIN_COMBINATIONS = [
   [0, 1, 2], # top row
   [3, 4, 5], # middle row
@@ -15,6 +14,7 @@ WIN_COMBINATIONS = [
   [0, 4, 8], # diagonal top-left to bottom right
   [2, 4, 6]  # diagonal top-right to bottom left
 ]
+
 
 # Checks if someone has won the game
 def won?(board)
