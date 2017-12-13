@@ -70,7 +70,7 @@ def winner(board)
   number_of_o = board.select {|position| position == 'O'}
 
   if (won?(board) != false)
-    if number_of_x > number_of_o
+    if number_of_x.length > number_of_o.length
       return 'X'
 
     elsif number_of_x < number_of_o
