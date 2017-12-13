@@ -150,7 +150,7 @@ winner(board9)
 winner(board10)
 winner(board11)
 winner(board12)
-=end
+
 
 board1 = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 board2 = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
@@ -177,3 +177,4 @@ print "#{won?(board9)}\n"
 print "#{won?(board10)}\n"
 print "#{won?(board11)}\n"
 print "#{won?(board12)}\n"
+=end
