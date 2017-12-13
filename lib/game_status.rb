@@ -42,7 +42,7 @@ def won?(board)
 
     else
       win_array = []
-      return false
+      return "What the fuck happened?!!!"
     end
   end
 end
