@@ -34,9 +34,11 @@ def won?(board)
     position_3 = board[win_index_3]
 
     if (position_1 == 'X' && position_2 == 'X' && position_3 == 'X') || (position_1 == 'O' && position_2 == 'O' && position_3 == 'O')
-      win_array << win_index_1
-      win_array << win_index_2
-      win_array << win_index_3
+      return win_combination
+
+      #win_array << win_index_1
+      #win_array << win_index_2
+      #win_array << win_index_3
 
       return win_array
     end
