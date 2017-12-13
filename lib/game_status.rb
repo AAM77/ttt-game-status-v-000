@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 
   win_array = []
-  WIN_COMBINATIONS.all? do |win_combination|
+  WIN_COMBINATIONS.any? do |win_combination|
     win_combination.all? {|win_index| board[win_index] == 'X'}
   end
 end
