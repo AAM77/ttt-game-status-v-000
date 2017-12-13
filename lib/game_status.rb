@@ -12,8 +12,8 @@ WIN_COMBINATIONS = [
   [0, 3, 6], # first column
   [1, 4, 7], # second column
   [2, 5, 8], # third column
-  [0, 4, 8], # diagonal top-right to bottom left
-  [2, 4, 6] # diagonal top-left to bottom right
+  [0, 4, 8], # diagonal top-left to bottom right
+  [2, 4, 6] # diagonal top-right to bottom left
 ]
 
 # Checks if someone has won the game
