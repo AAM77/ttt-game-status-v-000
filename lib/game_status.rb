@@ -131,19 +131,9 @@ end
 
 =end
 
-board1 = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-board2 = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-board3 = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
-board4 = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
-board5 = [" ", " ", " ", "O", "O", " ", "X", "X", "X"]
-board6 = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
-board7 = ["X", "O", " ", "X", "O", " ", " ", "O", " "]
-board8 = ["X", " ", "O", "X", " ", "O", " ", " ", "O"]
-board9 = ["X", " ", "O", " ", "X", "O", " ", " ", "X"]
-board10 = ["X", " ", "O", "X", "O", " ", "O", " ", " "]
-board11 = ["X", "X", "X", "O", "X", "O", "O", "O", "X"]
-board12 = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 
+
+=begin
 winner(board1)
 winner(board2)
 winner(board3)
@@ -156,7 +146,20 @@ winner(board9)
 winner(board10)
 winner(board11)
 winner(board12)
+=end
 
+board1 = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board2 = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+board3 = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+board4 = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
+board5 = [" ", " ", " ", "O", "O", " ", "X", "X", "X"]
+board6 = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
+board7 = ["X", "O", " ", "X", "O", " ", " ", "O", " "]
+board8 = ["X", " ", "O", "X", " ", "O", " ", " ", "O"]
+board9 = ["X", " ", "O", " ", "X", "O", " ", " ", "X"]
+board10 = ["X", " ", "O", "X", "O", " ", "O", " ", " "]
+board11 = ["X", "X", "X", "O", "X", "O", "O", "O", "X"]
+board12 = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 
 print "#{won?(board1)}\n"
 print "#{won?(board2)}\n"
